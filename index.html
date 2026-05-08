@@ -521,7 +521,7 @@
       margin-top: 4px;
     }
 
-    .submit-btn:hover { background: var(--orange-light); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(232,100,10,0.3); }
+    .submit-btn:hover { background: var(--green); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(232,100,10,0.3); }
 
     /* ===== FOOTER ===== */
     footer {
@@ -748,7 +748,7 @@
         </select>
       </div>
       <div class="form-group"><label>Message</label><textarea placeholder="Tell us what you're looking for or ask us anything..."></textarea></div>
-      <button class="submit-btn" onclick="handleSubmit()">Send Message →</button>
+      <button class="submit-btn" onclick="handleSubmit()">Send WhatsApp→</button>
     </div>
   </div>
 </section>
@@ -804,8 +804,11 @@
     { id:6, name:"Tape Measure 5m", category:"tools", cat_label:"Hand Tools", emoji:"📏", price:"KSh 450", old:"KSh 600", desc:"Heavy-duty 5 metre tape with magnetic tip and belt clip.", badge:"Sale", badgeClass:"sale" },
     { id:7, name:"Gate Valve 3/4\"", category:"plumbing", cat_label:"Plumbing", emoji:"🔧", price:"KSh 650", old:"", desc:"Brass body gate valve for water, oil, and gas applications.", badge:"", badgeClass:"" },
     { id:8, name:"Extension Cord 10m", category:"electrical", cat_label:"Electrical", emoji:"🔌", price:"KSh 1,100", old:"KSh 1,400", desc:"Heavy-duty 3-pin extension cord with surge protection and 4 sockets.", badge:"Best Seller", badgeClass:"" },
-  ];
-
+    { id:9, name:"Simba Cement",
+category:"building materials",cat_label:"Building materials"
+emoji:"⚙️",price:"Ksh 820", desc:"quality for building and plastering.",
+badge:"Best Seller",badgeClass:"" },
+  ] ;
   function renderProducts(filter = 'all') {
     const grid = document.getElementById('product-grid');
     const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
