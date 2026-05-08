@@ -749,7 +749,14 @@
       </div>
       <div class="form-group"><label>Message</label><textarea placeholder="Tell us what you're looking for or ask us anything..."></textarea></div>
       <button class="submit-btn" onclick="handleSubmit()">Send WhatsApp→</button>
-    </div>
+    <script>
+    function sendWhatsApp() {
+      var name=document.getElementByld('wName').value||'Not provided';
+      var phone=document.getElementByld('wPhone').value||'Not provided';
+      var message=document.getElementByld('wMessage').value||'Not provided';
+      text=Hello Kabaiko Hardware!%0AName:'+ name'+%0APhone:'+phone'+%0AMessage:'+message;
+      window.open=('https://wa.me/254743362707?text='+text,'_blank');
+    }
   </div>
 </section>
 
